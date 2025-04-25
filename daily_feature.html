@@ -67,3 +67,76 @@
     </footer>
 </body>
 </html>
+<div class="animated-gradient-background">
+    <div class="floating-shapes">
+        <div class="shape circle" style="background-color: rgba(30, 144, 255, 0.7); width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 20%; left: 10%; animation: float 6s ease-in-out infinite;"></div>
+        <div class="shape triangle" style="border-left: 60px solid transparent; border-right: 60px solid transparent; border-bottom: 120px solid rgba(255, 255, 255, 0.7); position: absolute; top: 60%; right: 20%; animation: rotate 8s linear infinite;"></div>
+        <div class="shape square" style="background-color: rgba(255, 255, 255, 0.7); width: 80px; height: 80px; position: absolute; top: 40%; left: 50%; transform: translateX(-50%); animation: pulse 4s ease-in-out infinite;"></div>
+    </div>
+    <div class="content" style="text-align: center; padding: 100px 20px; position: relative; z-index: 1;">
+        <h2 style="font-size: 48px; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Discover the Beauty</h2>
+        <p style="font-size: 24px; color: white; max-width: 600px; margin: 20px auto;">Immerse yourself in a world of captivating visuals and stunning designs. Our unique creations will leave you in awe.</p>
+        <a href="#" class="cta-button" style="display: inline-block; background-color: white; color: #1e90ff; padding: 15px 30px; text-decoration: none; border-radius: 30px; font-size: 20px; transition: background-color 0.3s ease-in-out;">Explore Now</a>
+    </div>
+</div>
+
+<style>
+    .animated-gradient-background {
+        background: linear-gradient(45deg, #1e90ff, #00bfff, #87cefa, #00bfff, #1e90ff);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        position: relative;
+        overflow: hidden;
+        height: 500px;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1) translateX(-50%);
+        }
+        50% {
+            transform: scale(1.2) translateX(-50%);
+        }
+        100% {
+            transform: scale(1) translateX(-50%);
+        }
+    }
+
+    .cta-button:hover {
+        background-color: #187bcd;
+        color: white;
+    }
+</style>
