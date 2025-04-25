@@ -257,3 +257,54 @@
     showImage(currentIndex);
   });
 </script>
+<div class="interactive-product-carousel" style="position: relative; width: 100%; height: 500px; overflow: hidden;">
+  <div class="product-images" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; transition: transform 0.5s ease-in-out;">
+    <img src="product1.jpg" alt="Product 1" style="width: 100%; height: 100%; object-fit: cover;">
+    <img src="product2.jpg" alt="Product 2" style="width: 100%; height: 100%; object-fit: cover;">
+    <img src="product3.jpg" alt="Product 3" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+  <div class="product-navigation" style="position: absolute; top: 50%; transform: translateY(-50%); width: 100%; display: flex; justify-content: space-between; padding: 0 20px; box-sizing: border-box;">
+    <button class="arrow prev" style="background-color: rgba(255, 255, 255, 0.7); border: none; color: #333; font-size: 24px; padding: 10px; cursor: pointer;">&#10094;</button>
+    <button class="arrow next" style="background-color: rgba(255, 255, 255, 0.7); border: none; color: #333; font-size: 24px; padding: 10px; cursor: pointer;">&#10095;</button>
+  </div>
+  <div class="product-descriptions" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 10px; box-sizing: border-box; text-align: center; transition: transform 0.5s ease-in-out;">
+    <p class="description" style="margin: 0;">Description for Product 1</p>
+    <p class="description" style="margin: 0;">Description for Product 2</p>
+    <p class="description" style="margin: 0;">Description for Product 3</p>
+  </div>
+</div>
+
+<script>
+  const productImages = document.querySelector('.product-images');
+  const prevArrow = document.querySelector('.arrow.prev');
+  const nextArrow = document.querySelector('.arrow.next');
+  const productDescriptions = document.querySelector('.product-descriptions');
+  const descriptions = document.querySelectorAll('.description');
+
+  let currentIndex = 0;
+  const totalProducts = productImages.children.length;
+
+  function showProduct(index) {
+    productImages.style.transform = `translateX(-${index * 100}%)`;
+    productDescriptions.style.transform = `translateY(${index * -100}%)`;
+    currentIndex = index;
+  }
+
+  prevArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalProducts) % totalProducts;
+    showProduct(currentIndex);
+  });
+
+  nextArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalProducts;
+    showProduct(currentIndex);
+  });
+
+  productImages.addEventListener('mouseover', () => {
+    productDescriptions.style.transform = 'translateY(0)';
+  });
+
+  productImages.addEventListener('mouseout', () => {
+    productDescriptions.style.transform = `translateY(${currentIndex * -100}%)`;
+  });
+</script>
