@@ -87,3 +87,79 @@
     </div>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Website of Random Useful Tools, Features, and Ideas</title>
+    <style>
+        .feature-highlight-card {
+            background-color: #ff9a00;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .hero-banner {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hero-banner img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .cta-button {
+            background-color: #fff;
+            color: #ff9a00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .ingredient-input, .recipe-output, .share-buttons {
+            margin-bottom: 20px;
+        }
+        .fade-in {
+            animation: fade-in 1s ease-in-out;
+        }
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="feature-highlight-card">
+        <div class="hero-banner">
+            <img src="https://picsum.photos/800/300" alt="AI-Powered Recipe Generator">
+            <button class="cta-button">Generate Recipes Now!</button>
+        </div>
+        <div class="ingredient-input fade-in">
+            <h2>Enter Your Ingredients</h2>
+            <form>
+                <input type="text" placeholder="Enter ingredients separated by commas" required>
+                <button type="submit">Generate Recipe</button>
+            </form>
+        </div>
+        <div class="recipe-output">
+            <h2>Generated Recipe</h2>
+            <div>
+                <img src="https://picsum.photos/400/300" alt="Generated Recipe">
+                <h3>Recipe Title</h3>
+                <p>Recipe Instructions</p>
+            </div>
+        </div>
+        <div class="share-buttons">
+            <h2>Share Your Recipe</h2>
+            <button>Share on Facebook</button>
+            <button>Share on Twitter</button>
+            <button>Share on Pinterest</button>
+        </div>
+    </div>
+</body>
+</html>
