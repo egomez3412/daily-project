@@ -9,3 +9,85 @@
     
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily New website</title>
+    <style>
+        .FeatureHighlightCard {
+            background-color: #ff9800;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .FeatureHighlightCard h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            animation: fadeDown 1s ease;
+        }
+
+        .FeatureHighlightCard video {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .FeatureHighlightCard h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .FeatureHighlightCard ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .FeatureHighlightCard li {
+            margin-bottom: 5px;
+        }
+
+        @keyframes fadeDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="FeatureHighlightCard">
+        <h2>Recipe Sharing Platform</h2>
+        <video src="hero-video.mp4" controls></video>
+        <h3>Ingredients</h3>
+        <ul>
+            <li>1 cup flour</li>
+            <li>2 eggs</li>
+            <li>1/2 cup sugar</li>
+            <li>1 tsp vanilla extract</li>
+        </ul>
+        <h3>Recipe Steps</h3>
+        <ol>
+            <li>Preheat oven to 350°F</li>
+            <li>Mix all ingredients in a bowl</li>
+            <li>Pour batter into a greased pan</li>
+            <li>Bake for 30 minutes</li>
+        </ol>
+        <h3>User Comments</h3>
+        <ul>
+            <li>"This recipe is amazing! So easy to follow."</li>
+            <li>"I made this for my family, and they loved it!"</li>
+            <li>"Can't wait to try more recipes from this platform."</li>
+        </ul>
+    </div>
+</body>
+</html>
