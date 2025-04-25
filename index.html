@@ -64,3 +64,54 @@
         const modal = document.getElementById('modal');
         modal.style.display = "none";
     }
+<div class="hero-cta-card" style="background-color: #8c52ff; padding: 20px; animation: fadeDown 1s ease-in-out;">
+    <header>
+        <div class="logo" style="text-align: center; margin-bottom: 20px;">
+            <img src="logo.png" alt="Movie Review Blog Logo" style="max-width: 200px;">
+        </div>
+    </header>
+
+    <div class="hero-video" style="position: relative; width: 100%; padding-bottom: 56.25%; margin-bottom: 20px;">
+        <video src="hero-video.mp4" autoplay loop muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></video>
+        <div class="cta-button" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);">
+            <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #fff; color: #8c52ff; text-decoration: none; border-radius: 5px; font-weight: bold;">Read Reviews</a>
+        </div>
+    </div>
+
+    <section class="trending-posts" style="margin-bottom: 20px;">
+        <h2 style="color: #fff; margin-bottom: 10px;">Trending Posts</h2>
+        <ul style="list-style-type: none; padding: 0;">
+            <li><a href="#" style="color: #fff; text-decoration: none;">Movie Review 1</a></li>
+            <li><a href="#" style="color: #fff; text-decoration: none;">Movie Review 2</a></li>
+            <li><a href="#" style="color: #fff; text-decoration: none;">Movie Review 3</a></li>
+        </ul>
+    </section>
+
+    <section class="about-us" style="margin-bottom: 20px;">
+        <h2 style="color: #fff; margin-bottom: 10px;">About Us</h2>
+        <p style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, nisl eget aliquam ultricies, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.</p>
+    </section>
+
+    <footer>
+        <div class="email-signup" style="text-align: center;">
+            <h3 style="color: #fff; margin-bottom: 10px;">Sign up for our newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" style="padding: 5px; width: 200px;">
+                <button type="submit" style="padding: 5px 10px; background-color: #fff; color: #8c52ff; border: none; cursor: pointer;">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+</div>
+
+<style>
+    @keyframes fadeDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
