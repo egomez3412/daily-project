@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Plate - Vegan Meal Delivery</title>
+    <title>Vintage Vinyl Haven</title>
     <style>
         * {
             margin: 0;
@@ -43,7 +43,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #ff9c5b;
+            color: #8a4f2b;
         }
         
         .logo img {
@@ -67,7 +67,7 @@
         }
         
         .nav-links a:hover {
-            color: #ff9c5b;
+            color: #8a4f2b;
         }
         
         /* Hero Section */
@@ -94,7 +94,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.6);
             z-index: -1;
         }
         
@@ -122,7 +122,7 @@
         }
         
         .cta-button {
-            background-color: #ff9c5b;
+            background-color: #8a4f2b;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -136,9 +136,9 @@
         }
         
         .cta-button:hover {
-            background-color: #ff8a3c;
+            background-color: #6a3b1d;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(255, 156, 91, 0.3);
+            box-shadow: 0 10px 20px rgba(138, 79, 43, 0.3);
         }
         
         /* About Section */
@@ -168,7 +168,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #ff9c5b;
+            background-color: #8a4f2b;
         }
         
         .about-content {
@@ -187,7 +187,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            color: #ff9c5b;
+            color: #8a4f2b;
         }
         
         .about-text p {
@@ -210,208 +210,69 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        /* Menu Preview */
-        .menu {
+        /* Featured Albums */
+        .featured-albums {
             padding: 100px 0;
             background-color: #f9f9f9;
         }
         
-        .menu-items {
+        .album-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
         }
         
-        .menu-item {
+        .album-item {
             background-color: #fff;
             border-radius: 10px;
             overflow: hidden;
-            width: 350px;
+            width: 300px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .menu-item:hover {
+        .album-item:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        .menu-item img {
+        .album-item img {
             width: 100%;
-            height: 200px;
+            height: 300px;
             object-fit: cover;
         }
         
-        .menu-item-content {
+        .album-item-content {
             padding: 20px;
         }
         
-        .menu-item-content h3 {
+        .album-item-content h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
-            color: #ff9c5b;
+            color: #8a4f2b;
         }
         
-        .menu-item-content p {
+        .album-item-content p {
             color: #666;
             margin-bottom: 15px;
             line-height: 1.5;
         }
         
-        .menu-item-content .price {
+        .album-item-content .price {
             font-weight: 700;
             color: #333;
             font-size: 1.2rem;
         }
         
-        /* Pricing Plans */
-        .pricing {
+        /* Store Hours */
+        .store-hours {
             padding: 100px 0;
             background-color: #fff;
         }
         
-        .pricing-plans {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-        
-        .pricing-plan {
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            padding: 40px 30px;
-            width: 300px;
-            text-align: center;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .pricing-plan:hover {
-            transform: scale(1.05);
-        }
-        
-        .popular {
-            position: absolute;
-            top: 20px;
-            right: -35px;
-            background-color: #ff9c5b;
-            color: #fff;
-            padding: 5px 40px;
-            transform: rotate(45deg);
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-        
-        .pricing-plan h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        
-        .pricing-plan .price {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #ff9c5b;
-            margin-bottom: 20px;
-        }
-        
-        .pricing-plan .price span {
-            font-size: 1rem;
-            color: #666;
-        }
-        
-        .pricing-plan ul {
-            list-style: none;
-            margin-bottom: 30px;
-        }
-        
-        .pricing-plan ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-            color: #666;
-        }
-        
-        .pricing-plan ul li:last-child {
-            border-bottom: none;
-        }
-        
-        .pricing-plan .plan-button {
-            background-color: #ff9c5b;
-            color: #fff;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .pricing-plan .plan-button:hover {
-            background-color: #ff8a3c;
-            box-shadow: 0 5px 15px rgba(255, 156, 91, 0.3);
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            padding: 100px 0;
-            background-color: #f9f9f9;
-        }
-        
-        .testimonial-slider {
+        .hours-container {
             max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
-        .testimonial {
-            text-align: center;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-            margin: 20px;
-        }
-        
-        .testimonial img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 20px;
-            border: 3px solid #ff9c5b;
-        }
-        
-        .testimonial p {
-            font-style: italic;
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        
-        .testimonial h4 {
-            color: #333;
-            margin-bottom: 5px;
-        }
-        
-        .testimonial .rating {
-            color: #ff9c5b;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-        
-        /* Sign Up Form */
-        .signup {
-            padding: 100px 0;
-            background-color: #fff;
-            position: relative;
-        }
-        
-        .signup-form {
-            max-width: 500px;
             margin: 0 auto;
             background-color: #f9f9f9;
             padding: 40px;
@@ -419,7 +280,45 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        .signup-form h3 {
+        .hours-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .hours-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1rem;
+        }
+        
+        .hours-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .day {
+            font-weight: 600;
+            color: #8a4f2b;
+        }
+        
+        /* Contact Form */
+        .contact {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+            position: relative;
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
             color: #333;
@@ -437,7 +336,9 @@
             font-weight: 500;
         }
         
-        .form-group input, .form-group select {
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
             width: 100%;
             padding: 12px 15px;
             border: 1px solid #ddd;
@@ -446,14 +347,21 @@
             transition: border-color 0.3s ease;
         }
         
-        .form-group input:focus, .form-group select:focus {
-            border-color: #ff9c5b;
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #8a4f2b;
             outline: none;
         }
         
         .submit-button {
             width: 100%;
-            background-color: #ff9c5b;
+            background-color: #8a4f2b;
             color: #fff;
             border: none;
             padding: 15px;
@@ -466,8 +374,8 @@
         }
         
         .submit-button:hover {
-            background-color: #ff8a3c;
-            box-shadow: 0 5px 15px rgba(255, 156, 91, 0.3);
+            background-color: #6a3b1d;
+            box-shadow: 0 5px 15px rgba(138, 79, 43, 0.3);
         }
         
         /* Footer */
@@ -494,7 +402,7 @@
         .footer-column h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #ff9c5b;
+            color: #8a4f2b;
         }
         
         .footer-column p, .footer-column a {
@@ -506,7 +414,7 @@
         }
         
         .footer-column a:hover {
-            color: #ff9c5b;
+            color: #8a4f2b;
         }
         
         .social-links {
@@ -526,7 +434,7 @@
         }
         
         .social-links a:hover {
-            background-color: #ff9c5b;
+            background-color: #8a4f2b;
             color: #fff;
         }
         
@@ -538,18 +446,21 @@
             font-size: 0.9rem;
         }
         
-        /* Zoom In Up Animation */
-        .zoom-in-up {
-            animation: zoom-in-up 1s ease-in-out;
+        /* Slide Left Animation */
+        .slide-left {
+            animation: slide-left 1s ease-in-out;
+            opacity: 0;
+            transform: translateX(-100px);
+            animation-fill-mode: forwards;
         }
         
-        @keyframes zoom-in-up {
+        @keyframes slide-left {
             0% {
-                transform: scale(0.5) translateY(50px);
+                transform: translateX(-100px);
                 opacity: 0;
             }
             100% {
-                transform: scale(1) translateY(0);
+                transform: translateX(0);
                 opacity: 1;
             }
         }
@@ -569,11 +480,6 @@
                 margin-bottom: 30px;
             }
             
-            .pricing-plan {
-                width: 100%;
-                max-width: 350px;
-            }
-            
             .footer-column {
                 flex: 100%;
             }
@@ -589,15 +495,14 @@
     <nav>
         <div class="container nav-container">
             <div class="logo">
-                <img src="https://picsum.photos/200/80" alt="Green Plate Logo">
+                <img src="https://picsum.photos/200/80" alt="Vintage Vinyl Haven Logo">
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#featured">Featured Albums</a></li>
+                <li><a href="#hours">Store Hours</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -605,13 +510,14 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop>
-            <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbef&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+            <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="video/mp4">
+            <source src="https://player.vimeo.com/external/394678700.sd.mp4?s=353646e34d7bde02ad0e8ecbef785f05eaa0ebbf&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1>Fresh. Vegan. Delivered.</h1>
-            <p>Delicious plant-based meals prepared by our chefs and delivered straight to your door.</p>
-            <button class="cta-button">Get Started</button>
+            <h1>Vintage Vinyl Haven</h1>
+            <p>Discover rare and classic records from every era. Your journey through musical history starts here.</p>
+            <button class="cta-button">Shop Collection</button>
         </div>
     </section>
     
@@ -623,130 +529,93 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Our Mission</h3>
-                    <p>At Green Plate, we believe that eating plant-based should be easy, delicious, and accessible to everyone. Our team of professional chefs craft nutrient-rich, flavorful meals using only the freshest organic ingredients.</p>
-                    <p>Founded in 2018, we've grown from a small kitchen to serving thousands of customers nationwide, all while maintaining our commitment to sustainability, health, and incredible taste.</p>
-                    <p>Every meal is prepared with love, packed in eco-friendly containers, and delivered in reusable or compostable packaging to minimize our environmental footprint.</p>
+                    <h3>Our Story</h3>
+                    <p>Established in 1978, Vintage Vinyl Haven has been a cornerstone of the local music scene for over four decades. What started as a small passion project in a garage has grown into the city's premier destination for vinyl enthusiasts.</p>
+                    <p>Our collection spans genres and eras, from rare jazz pressings of the 1950s to modern indie exclusives. Each record in our store is personally curated by our team of music aficionados who live and breathe vinyl culture.</p>
+                    <p>Beyond just selling records, we're committed to preserving the art of analog listening and building a community where music lovers can gather, share, and discover new sounds together.</p>
                 </div>
-                <div class="about-image zoom-in-up">
-                    <img src="https://picsum.photos/600/400" alt="About Green Plate">
+                <div class="about-image slide-left">
+                    <img src="https://picsum.photos/seed/vinyl1/600/400" alt="Vintage record store interior">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Menu Preview Section -->
-    <section class="menu" id="menu">
+    <!-- Featured Albums Section -->
+    <section class="featured-albums" id="featured">
         <div class="container">
             <div class="section-title">
-                <h2>Our Menu Preview</h2>
+                <h2>Featured Albums</h2>
             </div>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img src="https://picsum.photos/seed/meal1/400/300" alt="Buddha Bowl">
-                    <div class="menu-item-content">
-                        <h3>Rainbow Buddha Bowl</h3>
-                        <p>Colorful medley of quinoa, roasted sweet potatoes, avocado, edamame, carrots, and purple cabbage with a zesty tahini dressing.</p>
-                        <div class="price">$12.99</div>
+            <div class="album-items">
+                <div class="album-item">
+                    <img src="https://picsum.photos/seed/album1/400/400" alt="Classic Jazz Album">
+                    <div class="album-item-content">
+                        <h3>Miles Davis - Kind of Blue</h3>
+                        <p>Original 1959 pressing in excellent condition. The definitive jazz album of all time.</p>
+                        <div class="price">$189.99</div>
                     </div>
                 </div>
-                <div class="menu-item">
-                    <img src="https://picsum.photos/seed/meal2/400/300" alt="Pasta Dish">
-                    <div class="menu-item-content">
-                        <h3>Creamy Mushroom Pasta</h3>
-                        <p>Gluten-free pasta tossed with a silky cashew cream sauce, sautéed garlic mushrooms, and fresh herbs.</p>
-                        <div class="price">$14.99</div>
+                <div class="album-item">
+                    <img src="https://picsum.photos/seed/album2/400/400" alt="Rock Album">
+                    <div class="album-item-content">
+                        <h3>Pink Floyd - Dark Side of the Moon</h3>
+                        <p>1973 UK pressing with original posters and stickers included.</p>
+                        <div class="price">$149.99</div>
                     </div>
                 </div>
-                <div class="menu-item">
-                    <img src="https://picsum.photos/seed/meal3/400/300" alt="Curry Dish">
-                    <div class="menu-item-content">
-                        <h3>Thai Green Curry</h3>
-                        <p>Fragrant coconut curry with bamboo shoots, bell peppers, tofu, and seasonal vegetables served with jasmine rice.</p>
-                        <div class="price">$15.99</div>
+                <div class="album-item">
+                    <img src="https://picsum.photos/seed/album3/400/400" alt="Soul Album">
+                    <div class="album-item-content">
+                        <h3>Marvin Gaye - What's Going On</h3>
+                        <p>Rare 1971 first pressing in near mint condition. Soul masterpiece.</p>
+                        <div class="price">$179.99</div>
+                    </div>
+                </div>
+                <div class="album-item">
+                    <img src="https://picsum.photos/seed/album4/400/400" alt="Alternative Album">
+                    <div class="album-item-content">
+                        <h3>Radiohead - OK Computer</h3>
+                        <p>Limited edition 180g audiophile pressing with expanded artwork.</p>
+                        <div class="price">$129.99</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Pricing Plans Section -->
-    <section class="pricing" id="pricing">
+    <!-- Store Hours Section -->
+    <section class="store-hours" id="hours">
         <div class="container">
             <div class="section-title">
-                <h2>Pricing Plans</h2>
+                <h2>Store Hours</h2>
             </div>
-            <div class="pricing-plans">
-                <div class="pricing-plan">
-                    <h3>Starter</h3>
-                    <div class="price">$49<span>/week</span></div>
-                    <ul>
-                        <li>5 meals per week</li>
-                        <li>Free delivery</li>
-                        <li>No commitment</li>
-                        <li>Basic meal choices</li>
-                        <li>Weekly menu updates</li>
-                    </ul>
-                    <button class="plan-button">Choose Plan</button>
-                </div>
-                <div class="pricing-plan">
-                    <div class="popular">Popular</div>
-                    <h3>Standard</h3>
-                    <div class="price">$89<span>/week</span></div>
-                    <ul>
-                        <li>10 meals per week</li>
-                        <li>Free delivery</li>
-                        <li>No commitment</li>
-                        <li>Full menu access</li>
-                        <li>Customization options</li>
-                    </ul>
-                    <button class="plan-button">Choose Plan</button>
-                </div>
-                <div class="pricing-plan">
-                    <h3>Family</h3>
-                    <div class="price">$129<span>/week</span></div>
-                    <ul>
-                        <li>15 meals per week</li>
-                        <li>Free priority delivery</li>
-                        <li>No commitment</li>
-                        <li>Full menu access</li>
-                        <li>Family-size portions</li>
-                    </ul>
-                    <button class="plan-button">Choose Plan</button>
-                </div>
+            <div class="hours-container">
+                <ul class="hours-list">
+                    <li><span class="day">Monday</span> <span>10:00 AM - 6:00 PM</span></li>
+                    <li><span class="day">Tuesday</span> <span>10:00 AM - 6:00 PM</span></li>
+                    <li><span class="day">Wednesday</span> <span>10:00 AM - 6:00 PM</span></li>
+                    <li><span class="day">Thursday</span> <span>10:00 AM - 8:00 PM</span></li>
+                    <li><span class="day">Friday</span> <span>10:00 AM - 9:00 PM</span></li>
+                    <li><span class="day">Saturday</span> <span>9:00 AM - 9:00 PM</span></li>
+                    <li><span class="day">Sunday</span> <span>11:00 AM - 5:00 PM</span></li>
+                </ul>
+                <p>Special hours may apply on holidays. Follow us on social media for updates.</p>
             </div>
         </div>
     </section>
     
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <!-- Contact Form Section -->
+    <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>What Our Customers Say</h2>
+                <h2>Contact Us</h2>
             </div>
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <img src="https://picsum.photos/seed/person1/200/200" alt="Customer">
-                    <div class="rating">★★★★★</div>
-                    <p>"Green Plate has transformed how I eat. As a busy professional, I never had time to cook healthy meals. Now I get delicious vegan food delivered right to my door!"</p>
-                    <h4>Sarah Johnson</h4>
-                    <small>Customer since 2020</small>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Sign Up Form Section -->
-    <section class="signup" id="signup">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get Started Today</h2>
-            </div>
-            <div class="signup-form">
-                <h3>Sign Up For Your First Delivery</h3>
+            <div class="contact-form">
+                <h3>Drop Us a Line</h3>
                 <form>
                     <div class="form-group">
-                        <label for="name">Full Name</label>
+                        <label for="name">Your Name</label>
                         <input type="text" id="name" required>
                     </div>
                     <div class="form-group">
@@ -754,18 +623,19 @@
                         <input type="email" id="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="plan">Select a Plan</label>
-                        <select id="plan">
-                            <option value="starter">Starter - $49/week</option>
-                            <option value="standard" selected>Standard - $89/week</option>
-                            <option value="family">Family - $129/week</option>
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="records">Record Availability</option>
+                            <option value="selling">Selling Your Collection</option>
+                            <option value="events">Events & Performances</option>
                         </select>
                     </div>
-                    <button type="submit" class="submit-button">Start My Meal Plan</button>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
                 </form>
             </div>
         </div>
@@ -776,23 +646,23 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Green Plate</h3>
-                    <p>Delicious vegan meals delivered fresh to your door. Eat well, feel great, and save the planet one meal at a time.</p>
+                    <h3>Vintage Vinyl Haven</h3>
+                    <p>Preserving musical history one record at a time. Your source for rare and classic vinyl from every era.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <p>123 Green Street</p>
-                    <p>San Francisco, CA 94110</p>
-                    <p>Email: hello@greenplate.com</p>
-                    <p>Phone: (555) 123-4567</p>
+                    <h3>Visit Us</h3>
+                    <p>123 Rhythm Street</p>
+                    <p>Melody District, MU 54321</p>
+                    <p>Email: info@vinylhaven.com</p>
+                    <p>Phone: (555) 456-7890</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
-                    <a href="#menu">Menu</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#testimonials">Testimonials</a>
+                    <a href="#featured">Featured Albums</a>
+                    <a href="#hours">Store Hours</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-column">
                     <h3>Follow Us</h3>
@@ -805,26 +675,29 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Green Plate. All rights reserved.</p>
+                <p>&copy; 2023 Vintage Vinyl Haven. All rights reserved.</p>
             </div>
         </div>
     </footer>
     
     <script>
-        // Simple animation trigger for elements with zoom-in-up class
         document.addEventListener('DOMContentLoaded', function() {
-            const observer = new IntersectionObserver((entries) => {
+            // Slide-left animation observer
+            const slideObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('zoom-in-up');
+                        setTimeout(() => {
+                            entry.target.style.opacity = 1;
+                            entry.target.style.transform = 'translateX(0)';
+                        }, 200);
                     }
                 });
             }, { threshold: 0.1 });
             
-            // Observe the about image
-            const elements = document.querySelectorAll('.about-image');
-            elements.forEach(el => {
-                observer.observe(el);
+            // Observe the slide-left elements
+            const slideElements = document.querySelectorAll('.slide-left');
+            slideElements.forEach(el => {
+                slideObserver.observe(el);
             });
             
             // Smooth scrolling for navigation links
@@ -841,6 +714,28 @@
                             behavior: 'smooth'
                         });
                     }
+                });
+            });
+            
+            // CTA button click action
+            document.querySelector('.cta-button').addEventListener('click', function() {
+                window.scrollTo({
+                    top: document.querySelector('#featured').offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Album hover effect enhancement
+            const albumItems = document.querySelectorAll('.album-item');
+            albumItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.03)';
+                    this.style.boxShadow = '0 20px 30px rgba(0, 0, 0, 0.15)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = '';
                 });
             });
         });
